@@ -1,0 +1,123 @@
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+} 
+
+body{
+    background-color: rgb(8, 8, 12)
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(44, 130, 151);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+/*ESTILO DO CABEÇALHO */
+
+.header{
+    padding: 30px 4%;
+}
+
+.logo img{
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgba(100, 100, 100, 0.664);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#fff;
+    transform: scale(1.06);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}    
+
+.contato button:hover{
+    box-shadow: 0px 0px 8px #4998e2;
+    transform: scale(1.05);
+}
+/*TOPO DO SITE*/
+
+.flex img{
+    width: 250px;
+    height: 450px;
+    border-radius: 30px;
+
+}
+
+section.topoSite{
+    padding: 40px 4%;
+}
+
+section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topoSite h1{
+    color: #fff;
+    font-size: 42px;
+}
+
+.topoSite .txt-topo-site p{
+    color: #fff;
+    margin: 20px 0;
+}
+
+.topoSite .img-topo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+
+    100%{
+
+        top: 30px;
+    }
+}
