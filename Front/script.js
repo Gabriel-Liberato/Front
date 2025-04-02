@@ -1,25 +1,22 @@
-function somar(){
+function expressao(parametro) {
+    console.log(parametro);
+    document.getElementById('tela').value += parametro;
+}
 
-    var numero1 = parseFloat(document.getElementById('numero1').value);
-    var numero2 = parseFloat(document.getElementById('numero2').value);
+function resultado(){
 
-    let resultado = numero1 + numero2;
-    document.getElementById('resultado').innerText = resultado;
+    try {
+        let expressao = document.getElementById('tela').value;
+        let resultado = eval(expressao)
+        document.getElementById('tela').value = resultado;
+
+    } catch (error) {
+        document.getElementById('tela').value = "Error.";
+        
+    }
 
 }
 
-function dividir(){
-
-    var numero1 = parseFloat(document.getElementById('numero1').value);
-    var numero2 = parseFloat(document.getElementById('numero2').value);
-
-    if(numero2 === 0){
-        document.getElementById('resultado').innerText = "Divisão por zero.";
-
-    }else{
-        let resultado = numero1 / numero2;
-        document.getElementById('resultado').innerText = resultado;
-    }
-
-
+function limpar() {
+    document.getElementById('tela').value = " ";
 }

@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botoes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.btlLaranja{
+    background-color: rgba(248, 136, 7, 0.966);
+}
+.btlcinza {
+    background-color: rgba(240, 248, 255, 0.671);
+}

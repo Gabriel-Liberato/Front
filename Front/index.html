@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+
     <div class="Calculadora">
         <div class="display">
-            <input type="text" id="display" readonly>
+            <input type="text"id="tela" readonly>
         </div>
         <div class="botoes">
-            <button onclick="">7</button> 
-            <button onclick="">8</button> 
-            <button onclick="">9</button> 
-            <button onclick="">*</button> 
-            
-            <button onclick="">4</button> 
-            <button onclick="">5</button> 
-            <button onclick="">6</button> 
-            <button onclick="">-</button> 
-            
-            <button onclick="">1</button> 
-            <button onclick="">2</button> 
-            <button onclick="">3</button> 
-            <button onclick="">+</button> 
+            <button class="btlcinza" onclick="expressao('7')">7</button>
+            <button class="btlcinza" onclick="expressao('8')">8</button>
+            <button class="btlcinza" onclick="expressao('9')">9</button>
+            <button class="btlLaranja"onclick="expressao('*')">*</button>
 
-            <button onclick="">0</button> 
-            <button onclick="">=</button> 
-            <button onclick="">/</button> 
-            <button onclick="">C</button> 
+            <button class="btlcinza" onclick="expressao('4')">4</button>
+            <button class="btlcinza" onclick="expressao('5')">5</button>
+            <button class="btlcinza" onclick="expressao('6')">6</button>
+            <button class="btlLaranja" onclick="expressao('-')">-</button>
+
+            <button class="btlcinza" onclick="expressao('1')">1</button>
+            <button class="btlcinza" onclick="expressao('2')">2</button>
+            <button class="btlcinza" onclick="expressao('3')">3</button>
+            <button class="btlLaranja" onclick="expressao('+')">+</button>
+
+            <button class="btlcinza" onclick="expressao('0')">0</button>
+            <button class="btlcinza" onclick="limpar()">CE</button>
+            <button class="btlcinza" onclick="resultado()">=</button>
+            <button class="btlLaranja"onclick="expressao('/')">/</button>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
